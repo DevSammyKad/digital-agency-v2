@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="feature.css" />
+  </head>
+  <body>
+    <section class="circular-slider">
+      <div class="container">
+        <div class="text">
+          <h1>orage beryy</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            repellendus ad laboriosam voluptatibus excepturi et a, ipsam nisi
+            mollitia totam aliquid quis beatae velit commodi, veniam adipisci
+            natus placeat libero!
+          </p>
+        </div>
+        <div class="text">
+          <h1>red bery</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            optio necessitatibus, impedit similique sed voluptas et veritatis
+            tempore, in doloremque maiores sunt iure ratione officiis esse
+            delectus, rem atque omnis.
+          </p>
+        </div>
+        <div class="text">
+          <h1>black bery</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            repellendus ad laboriosam voluptatibus excepturi et a, ipsam nisi
+            mollitia totam aliquid quis beatae velit commodi, veniam adipisci
+            natus placeat libero!
+          </p>
+        </div>
+        <div class="text">
+          <h1>blue bery</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            optio necessitatibus, impedit similique sed voluptas et veritatis
+            tempore, in doloremque maiores sunt iure ratione officiis esse
+            delectus, rem atque omnis.
+          </p>
+        </div>
+        <div class="text">
+          <h1>green bery</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            repellendus ad laboriosam voluptatibus excepturi et a, ipsam nisi
+            mollitia totam aliquid quis beatae velit commodi, veniam adipisci
+            natus placeat libero!
+          </p>
+        </div>
+
+        <div class="slider">
+          <div class="indicator"></div>
+          <div class="menu">
+            <div>
+              <span>orange berry </span>
+            </div>
+            <div>
+              <span>red bery</span>
+            </div>
+            <div>
+              <span> black pery</span>
+            </div>
+            <div>
+              <span>blue bery</span>
+            </div>
+            <div>
+              <span>green bery</span>
+            </div>
+          </div>
+          <div class="img"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const slider = document.querySelector(".circular-slider");
+      const image = document.querySelector(".slider .img");
+      const indicator = document.querySelector(".indicator");
+      const menuItems = document.querySelectorAll(".menu span");
+      const description = document.querySelectorAll(".text");
+
+      const rotationValues = [-58, -32, 0, 32, 58];
+
+      const colors = [
+        "radial-gradient(#a74255, #448412)",
+        "radial-gradient(#ff4b5f, #a40b16)",
+        "radial-gradient(#fdb76d, #f8800)",
+        "radial-gradient(#849ade, #42395f)",
+        "radial-gradient(#e7ad59, #883e2a)",
+      ];
+      const images = ["img1", "img2", "img3", "img4", "img5"];
+
+      let itemIndex = 2;
+
+      function rotate(rotationValue) {
+        image.style.transform = `rotate(${rotationValue}deg)`;
+        indicator.style.transform = `translate(-50%, -50%) rotate(${rotationValue}deg)`;
+      }
+
+      menuItems.forEach((menuItem, i) => {
+        menuItem.addEventListener("click", () => {
+          image.style.background = `url(img/img/${images[i]}.png)`;
+          image.style.backgroundPosition = "center";
+          image.style.backgroundSize = "cover";
+          slider.style.background = colors[i];
+          if (i > itemIndex) {
+            rotate(rotationValues[itemIndex] - 10);
+          } else if (i < itemIndex) {
+            rotate(rotationValues[itemIndex] + 10);
+          } else {
+            return "";
+          }
+          setTimeout(() => {
+            rotate(rotationValues[i]);
+          }, 300);
+          description.forEach((text) => {
+            text.style.display = "none";
+          });
+          description[i].style.display = "block";
+          itemIndex = i;
+        });
+      });
+    </script>
+  </body>
+</html>
