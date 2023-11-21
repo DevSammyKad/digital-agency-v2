@@ -81,46 +81,56 @@
         </div>
       </div>
     </section>
-    <!-- /* ================== Journey-goal-section ================ */ -->
-    <section class="Journey-goal-section">
-      <div class="Journey-goal-heading">
-        <h1>Our Journey Through Time</h1>
-        <p>
-          Discover exceptional experiences through testimonials from our
-          satisfied customers.
-        </p>
+    <!-- /* ================== Why-Us-Section ================ */ -->
+    <section class="why-us-section">
+      <h2>Why Choose DM Tech</h2>
+      <hr class="hr-line" />
+      <figure class="why-us-img">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://lottie.host/173a83c1-8a9b-49ac-af57-640c96317b76/3lK73xth9g.json"
+          background="#FFFFFF"
+          speed="1"
+          style="width: 100%; height: 600px"
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
+      </figure>
+      <div class="why-us-container">
+        <div class="why-box" data-aos="zoom-in">
+          <h2>Transparency</h2>
+          <p>
+            In a world where transparency is often lacking, we pride ourselves
+            on our commitment to openness. We believe in full disclosure and
+            clear communication in every transaction.
+          </p>
+        </div>
+        <div class="why-box" data-aos="zoom-in">
+          <h2>Offline Transactions</h2>
+          <p>
+            To combat fraud and ensure the security of your investments, we
+            exclusively offer offline services. We meet with our clients in
+            person, providing a personal touch that online platforms can't match
+          </p>
+        </div>
       </div>
-      <div class="journey-goal-container">
-        <div class="card">
-          <h1>Customer Centricity</h1>
+      <div class="why-us-container why-us-sec-container">
+        <div class="why-box" data-aos="zoom-in">
+          <h2>Serving Pune and Mumbai</h2>
           <p>
-            Our clients are our priority. We listen to their needs, understand
-            their challenges, and work tirelessly to deliver IT solutions that
-            meet and exceed their expectations. Their success is our success.
+            Currently, our services are available exclusively in Pune and
+            Mumbai. By focusing on these markets, we can offer more personalized
+            and dedicated support to our clients.
           </p>
         </div>
-        <div class="card">
-          <h1>Quality Assurance</h1>
+        <div class="why-box" data-aos="zoom-in">
+          <h2>Fraud Prevention</h2>
           <p>
-            We have a relentless commitment to quality. We set high standards
-            and rigorously test and monitor our IT services to ensure they meet
-            those standards. Quality is non-negotiable.
-          </p>
-        </div>
-        <div class="card">
-          <h1>Client Focus</h1>
-          <p>
-            Our clients are the center of our IT universe. We listen to their
-            needs, provide tailored solutions, and stand by them every step of
-            the way. Their success is our success, excellence, integrity.
-          </p>
-        </div>
-        <div class="card">
-          <h1>Integrity Always</h1>
-          <p>
-            Integrity is the foundation of trust. We operate with complete
-            transparency, ensuring the highest ethical standards in all our IT
-            operations. Our clients rely on us for honesty and fairness.
+            Our offline approach significantly reduces the risk of fraud.
+            Meeting our clients face-to-face allows us to verify identities and
+            ensure that transactions are conducted safely.
           </p>
         </div>
       </div>
@@ -199,23 +209,23 @@
       </div>
     </section>
     <script>
-      const faqItems = document.querySelectorAll(".faq-item");
+      const faqItems = document.querySelectorAll('.faq-item');
 
       faqItems.forEach((item) => {
-        item.addEventListener("click", () => {
+        item.addEventListener('click', () => {
           // Toggle active class on faq item
-          item.classList.toggle("active");
+          item.classList.toggle('active');
 
           // Get image element
-          const img = item.querySelectorAll(".cross-icon");
+          const img = item.querySelectorAll('.cross-icon');
 
           // Check if faq item is active
-          if (item.classList.contains("active")) {
+          if (item.classList.contains('active')) {
             // Rotate image
-            img.style.transform = "rotate(20deg)";
+            img.style.transform = 'rotate(20deg)';
           } else {
             // Reset transform
-            img.style.transform = "rotate(45deg)";
+            img.style.transform = 'rotate(45deg)';
           }
         });
       });
