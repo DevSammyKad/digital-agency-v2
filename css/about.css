@@ -1,0 +1,190 @@
+.aboutUs-heading {
+  text-align: center;
+}
+.aboutUs-heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+/* ================== Trusted-Sectionn ================ */
+.trusted-section {
+  margin: 50px 0px;
+}
+.trusted-heading {
+  text-align: center;
+}
+.trusted-img {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trusted-img img {
+  margin: 10px 40px;
+}
+/* ================== Mission-Section ================ */
+.mission-container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.mission-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+.mission-container p {
+  line-height: 30px;
+  letter-spacing: 1.4;
+}
+.mission-box {
+  width: 50%;
+}
+.commitmet-box {
+  width: 50%;
+}
+
+/* <!-- ================== Why-Us-Section ================ --> */
+
+.why-us-section {
+  position: relative;
+}
+.why-us-section > h2 {
+  text-align: center;
+  letter-spacing: 1.7px;
+  background: linear-gradient(90deg, #ff75ac 9.19%, #9ea6ff 44.75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.why-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 90%;
+  margin: 80px auto;
+}
+.why-us-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+.why-box {
+  width: 25%;
+  box-shadow: 0px 0px 36px 19px rgba(133, 133, 194, 0.18);
+  border-radius: 20px;
+  padding: 18px;
+  cursor: pointer;
+}
+.why-box:hover {
+  box-shadow: 0px 0px 36px 19px rgba(56, 56, 235, 0.18);
+}
+.why-box h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.why-box p {
+  font-size: 14px;
+  color: #555454;
+}
+/* ================== TEAM SECTION  ================ */
+.team-heading {
+  text-align: center;
+}
+.team-heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.team-container {
+  width: 80%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.member-box {
+  margin: 40px 30px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.member-box img:hover {
+  transform: scale(1.1);
+}
+.member-box img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/15;
+  transition: all 0.3s ease-in-out;
+}
+.member-box:hover .member-info {
+  opacity: 1;
+  transform: translatey(0px);
+}
+.member-info {
+  position: absolute;
+  bottom: 30px;
+  left: 17px;
+  opacity: 0;
+  transform: translatey(90px);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.5s;
+  color: #ffffff;
+}
+/* <!-- * ########>>>>>>>>>>   FAQ   <<<<<<<<<##############* --> */
+.faq-heading {
+  text-align: center;
+}
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+.faq-item {
+  /* background-color: #f9f9f9; */
+
+  padding: 20px 22px;
+  margin: 20px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 11px;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-right: 30px;
+}
+
+.faq-item h3 {
+  margin-top: 0;
+}
+
+.faq-item p {
+  display: none;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active p {
+  display: block;
+}
