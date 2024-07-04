@@ -23,7 +23,7 @@
           </ul>
         </div>
         <div class="nav-about">
-          <a href="#about">About Us</a>
+          <a href="about.html">About Us</a>
         </div>
       </div>
     </nav>
@@ -37,6 +37,18 @@
         </p>
       </div>
       <!-- video section -->
+      <iframe
+        width="100%"
+        height="500"
+        margin="40"
+        controls="false"
+        loop
+        src="https://www.youtube.com/embed/MwpMEbgC7DA?si=8ja2XCkczedCGnws"
+        title="YouTube video player"
+        frameborder="0"
+        borderRadius="20px"
+        allowfullscreen
+      ></iframe>
     </section>
     <!-- /* ================== Trusted-Sectionn ================ */ -->
     <section class="trusted-section">
@@ -171,64 +183,103 @@
     </section>
     <!-- * ########>>>>>>>>>>   FAQ   <<<<<<<<<##############* -->
     <section class="faq-section">
-      <div class="faq-heading">
-        <h1>Frequently Asked Questions</h1>
-        <p>
-          Lorem ipsum dolor sit ametel magnam aut temporibus repellat?
-          Consequuntur vero fuga voluptas sit rem iste dicta.
-        </p>
-      </div>
       <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3>What services do you offer?</h3>
-            <img src="img/icons8-cross-30.png" alt="" />
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title"
+                >Why is the moon sometimes out during the day?</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
           </div>
-
-          <p>
-            We offer a full range of digital marketing services including SEO,
-            PPC, social media marketing, web design and development, content
-            creation, email marketing, and more. Our goal is to help grow your
-            online presence.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3>What is your experience in my industry?</h3>
-            <img class="cross-icon" src="img/icons8-cross-30.png" alt="" />
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Why is the sky blue?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
           </div>
-          <p>
-            We have extensive experience working with clients in your industry.
-            Over the years we have helped companies similar to yours increase
-            website traffic, generate more leads, and boost brand awareness
-            online. We understand the unique challenges and opportunities within
-            your vertical.
-          </p>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">Will we ever discover aliens?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false">
+              <span class="accordion-title"
+                >How much does the Earth weigh?</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false">
+              <span class="accordion-title">How do airplanes stay up?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <script>
-      const faqItems = document.querySelectorAll('.faq-item');
+      const items = document.querySelectorAll('.accordion button');
 
-      faqItems.forEach((item) => {
-        item.addEventListener('click', () => {
-          // Toggle active class on faq item
-          item.classList.toggle('active');
+      function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
 
-          // Get image element
-          const img = item.querySelectorAll('.cross-icon');
+        for (i = 0; i < items.length; i++) {
+          items[i].setAttribute('aria-expanded', 'false');
+        }
 
-          // Check if faq item is active
-          if (item.classList.contains('active')) {
-            // Rotate image
-            img.style.transform = 'rotate(20deg)';
-          } else {
-            // Reset transform
-            img.style.transform = 'rotate(45deg)';
-          }
-        });
-      });
+        if (itemToggle == 'false') {
+          this.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      items.forEach((item) => item.addEventListener('click', toggleAccordion));
     </script>
   </body>
 </html>
