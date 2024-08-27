@@ -8,26 +8,23 @@
     <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
-    <!-- * ########>>>>>>>>>>   NAVBAR   <<<<<<<<<##############* -->
     <nav id="navigation">
       <div class="navbar">
         <div class="logo">
-          <h2>DigitalMatrix <span>Technologies</span></h2>
+          <h2>Digital <span>Manifest</span></h2>
         </div>
         <div class="nav-links">
           <ul>
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="services.html">Services</a></li>
-            <li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
             <li class="nav-link"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="nav-about">
-          <a href="#about">About Us</a>
+          <a href="about.html">About Us</a>
         </div>
       </div>
     </nav>
-    <!-- * ########>>>>>>>>>>   ABOUTUS SECTION   <<<<<<<<<##############* -->
     <section class="aboutUs-section">
       <div class="aboutUs-heading">
         <h1>About Us</h1>
@@ -37,8 +34,14 @@
         </p>
       </div>
       <!-- video section -->
+      
+      <video autoplay loop muted playsinline class="background-video">
+        <source src="./VN20231203_200358.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
     </section>
-    <!-- /* ================== Trusted-Sectionn ================ */ -->
+    
     <section class="trusted-section">
       <div class="trusted-heading">
         <h2>Trusted By Specialists All Around The World</h2>
@@ -51,7 +54,6 @@
         <img src="img/sponcer/01.png" alt="" />
       </div>
     </section>
-    <!-- /* ================== mission-section ================ */ -->
     <hr class="hr-line" />
     <section class="mission-section">
       <div class="mission-container">
@@ -81,7 +83,6 @@
         </div>
       </div>
     </section>
-    <!-- /* ================== Why-Us-Section ================ */ -->
     <section class="why-us-section">
       <h2>Why Choose DM Tech</h2>
       <hr class="hr-line" />
@@ -136,7 +137,6 @@
       </div>
     </section>
 
-    <!-- /* ================== TEAM SECTION ================ */ -->
     <section class="team-section">
       <div class="team-heading">
         <h1>Meet Our Team</h1>
@@ -169,66 +169,159 @@
         </div>
       </div>
     </section>
-    <!-- * ########>>>>>>>>>>   FAQ   <<<<<<<<<##############* -->
     <section class="faq-section">
-      <div class="faq-heading">
-        <h1>Frequently Asked Questions</h1>
-        <p>
-          Lorem ipsum dolor sit ametel magnam aut temporibus repellat?
-          Consequuntur vero fuga voluptas sit rem iste dicta.
-        </p>
-      </div>
       <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3>What services do you offer?</h3>
-            <img src="img/icons8-cross-30.png" alt="" />
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title"
+                >Why is the moon sometimes out during the day?</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
           </div>
-
-          <p>
-            We offer a full range of digital marketing services including SEO,
-            PPC, social media marketing, web design and development, content
-            creation, email marketing, and more. Our goal is to help grow your
-            online presence.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3>What is your experience in my industry?</h3>
-            <img class="cross-icon" src="img/icons8-cross-30.png" alt="" />
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Why is the sky blue?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
           </div>
-          <p>
-            We have extensive experience working with clients in your industry.
-            Over the years we have helped companies similar to yours increase
-            website traffic, generate more leads, and boost brand awareness
-            online. We understand the unique challenges and opportunities within
-            your vertical.
-          </p>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">Will we ever discover aliens?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false">
+              <span class="accordion-title"
+                >How much does the Earth weigh?</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false">
+              <span class="accordion-title">How do airplanes stay up?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="footer-heading">
+        <div class="footer-logo">         
+          <h2>Digital <span>Manifest</span></h2>
+        </div>
+        <!-- <div class="footer-contact-us">
+              <input type="tel" placeholder="Enter Your Number"> 
+              <button type="submit">Call Now</button>  
+              <p> Further Details for Work call me</p> 
+        </div> -->
+      </div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h2>Digital Manifest </h2>
+        <p>Digital Manifest Technologies is a full-service digital marketing agency that helps businesses and brands to attract, impress and convert more leads online</p> 
+           
+        <h3>Address</h3>
+        <p>NDA Road Khadakwasla Pune-23</p>
+      </div>
+        <div class="footer-column">
+          <h2>Services</h2>
+          <ul class="footer-lists" >
+            <li><a href="">Front-End development</a> </li>
+            <li><a href="">Wordpress development</a> </li>
+            <li><a href="">Web application</a> </li>
+            <li><a href="">Software automation</a> </li>
+            <li><a href="">Integration</a> </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Industries</h2>
+          <ul class="footer-lists" >
+            <li><a href="">Finance & Banking</a> </li>
+            <li><a href="">Health Care </a> </li>
+            <li><a href="">Real Estate</a> </li>
+            <li><a href="">E-commerce & Retail</a> </li>
+            <li><a href="">Education & Training</a> </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>About Us</h2>
+          <ul class="footer-lists" >
+            <li><a href="">Portfolio</a> </li>
+            <li><a href="">Testimonials</a> </li>
+            <li><a href="">FAQ</a> </li>
+            <li><a href="">Privacy Policy </a> </li>
+            <li><a href="">Contact Us</a> </li>
+          </ul>
+        </div>
+
+      </div>
+        <hr class="hr-line">  
+          <div class="copyright">
+            <p> &#169copyright  @DigitalMatrix Technologies</p>
+          </div>
+    </footer>
     <script>
-      const faqItems = document.querySelectorAll('.faq-item');
+      const items = document.querySelectorAll('.accordion button');
 
-      faqItems.forEach((item) => {
-        item.addEventListener('click', () => {
-          // Toggle active class on faq item
-          item.classList.toggle('active');
+      function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
 
-          // Get image element
-          const img = item.querySelectorAll('.cross-icon');
+        for (i = 0; i < items.length; i++) {
+          items[i].setAttribute('aria-expanded', 'false');
+        }
 
-          // Check if faq item is active
-          if (item.classList.contains('active')) {
-            // Rotate image
-            img.style.transform = 'rotate(20deg)';
-          } else {
-            // Reset transform
-            img.style.transform = 'rotate(45deg)';
-          }
-        });
-      });
+        if (itemToggle == 'false') {
+          this.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      items.forEach((item) => item.addEventListener('click', toggleAccordion));
     </script>
   </body>
 </html>

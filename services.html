@@ -13,13 +13,12 @@
     <nav id="navigation">
       <div class="navbar">
         <div class="logo">
-          <h2>DigitalMatrix <span>Technologies</span></h2>
+          <h2>Digital <span>Manifest</span></h2>
         </div>
         <div class="nav-links">
           <ul>
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="services.html">Services</a></li>
-            <li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
             <li class="nav-link"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -181,21 +180,21 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener('DOMContentLoaded', function () {
         // Get all the slider boxes and content elements
-        const sliderBoxes = document.querySelectorAll(".slider-box");
-        const contentElements = document.querySelectorAll(".services-content");
+        const sliderBoxes = document.querySelectorAll('.slider-box');
+        const contentElements = document.querySelectorAll('.services-content');
 
         // Add click event listeners to each slider box
         sliderBoxes.forEach(function (sliderBox, index) {
-          sliderBox.addEventListener("click", function () {
+          sliderBox.addEventListener('click', function () {
             // Hide all content elements
             contentElements.forEach(function (contentElement) {
-              contentElement.style.display = "none";
+              contentElement.style.display = 'none';
             });
 
             // Display the corresponding content element
-            contentElements[index].style.display = "block";
+            contentElements[index].style.display = 'block';
           });
         });
       });
